@@ -39,7 +39,7 @@ body {
 /* Navbar */
 #navbar {
 	display: flex;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: black;
 	color: white;
 	justify-content: center;
 	position: fixed;
