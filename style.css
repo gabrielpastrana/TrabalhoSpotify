@@ -207,6 +207,8 @@
 	margin-left: 10px;
   }
   
+
+  /*COMEÇA ACCOUNT*/
   .page-content {
 	padding-top: 8%;
 	width: 100%;
@@ -353,3 +355,6 @@
 	border: rgb(182, 43, 190) 0%, rgb(150, 34, 185) 100%;
 	border-style: ridge;
   }
+
+
+  /*COMEÇA LOGIN*/
