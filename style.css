@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
   }
   
   :root {
@@ -37,7 +39,7 @@
 	height: 40px;
 	width: auto;
   }
-  
+ 
   /* menu */
   #menu {
 	display: flex;
@@ -207,8 +209,6 @@
 	margin-left: 10px;
   }
   
-
-  /*COMEÇA ACCOUNT*/
   .page-content {
 	padding-top: 8%;
 	width: 100%;
@@ -346,6 +346,7 @@
 	  rgb(150, 34, 185) 100%
 	);
   }
+
   .free-plan span {
 	padding: 0px 0px 0px 2rem;
 	display: flex;
@@ -355,6 +356,3 @@
 	border: rgb(182, 43, 190) 0%, rgb(150, 34, 185) 100%;
 	border-style: ridge;
   }
-
-
-  /*COMEÇA LOGIN*/
