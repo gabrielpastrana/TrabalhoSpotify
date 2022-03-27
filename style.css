@@ -356,3 +356,88 @@
 	border: rgb(182, 43, 190) 0%, rgb(150, 34, 185) 100%;
 	border-style: ridge;
   }
+
+  #logo{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 20px 0;
+  }
+
+  #logo .logo-preto{
+	  height: 50px;
+	  width: auto;
+  }
+
+  #showcase-login{
+		display: flex;
+		color: black;
+		justify-content: center;
+  }
+
+  #showcase-login .btn-facebook{
+	  background: #3b5998;
+	  color: white;
+	  text-transform: uppercase;
+	  padding: 15px 100px;
+	  border: none;
+	  border-radius: 30px;
+	  letter-spacing: 1px;
+  }
+
+  #showcase-login .btn-apple{
+	background: hsl(0, 0%, 0%);
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 118px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+}
+
+  #showcase-login .btn-google{
+	background: white;
+	color: black;
+	text-transform: uppercase;
+	padding: 15px 108px;
+	border: black;
+	border-radius: 30px;
+	letter-spacing: 1px;
+}
+
+  #showcase-login .btn-telefone{
+	background: white;
+	color: black;
+	text-transform: uppercase;
+	padding: 15px 47px;
+	border: black;
+	border-radius: 30px;
+	letter-spacing: 1px;
+}
+
+  #showcase-login .btn-login{
+	background: var(--default-green);
+	color: black;
+	text-transform: uppercase;
+	padding: 15px 35px;
+	border: black;
+	border-radius: 30px;
+	letter-spacing: 1px;
+}
+
+  #footer-login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+  }
+
+  #footer-login .footer-login-container .btn-signup{
+	background: white;
+	color: black;
+	text-transform: uppercase;
+	padding: 15px 35px;
+	border: black;
+	border-radius: 30px;
+	letter-spacing: 1px;
+}
