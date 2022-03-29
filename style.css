@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 
 :root {
@@ -369,8 +371,9 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-.showcase-login {
+#showcase-login {
   align-items: center;
+  text-align: center;
   color: black;
   font-family: Helvetica, Arial, sans-serif;
   margin-top: 0px;
@@ -382,7 +385,7 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-.showcase-login p {
+#showcase-login p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -392,13 +395,13 @@ table {
 .btn-facebook:hover,
 .btn-apple:hover,
 .btn-google:hover,
-.btn-telefone:hover {
+.btn-telefone:hover, .btn-login:hover, .btn-singup:hover {
   border-color: black;
 }
 
 .btn-facebook.btn-facebook,
 .btn-apple.btn-apple,
-.btn-google.btn-google {
+.btn-google.btn-google, .btn-singup.btn-singup {
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
@@ -412,7 +415,7 @@ table {
 .btn-facebook,
 .btn-apple,
 .btn-google,
-.btn-telefone {
+.btn-telefone, .btn-login, .btn-singup {
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -482,32 +485,42 @@ button {
   color: #464545;
   background-color: transparent;
 }
-h6 {
+.login h6 {
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  -webkit-box-align: center;
-  align-items: center;
-  display: flex;
   font-weight: 700;
-  width: 100%;
-  padding-bottom: 8px;
+  padding: 0.4rem 0.2rem 0.4rem 0;
+  text-align: left;
+  margin: auto 400px auto 450px;
+
 }
+.login {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .login-username:hover {
   box-shadow: inset 0 0 0 1px #000000;
 }
 
 .login-username {
+  align-items: center;
   appearance: none;
   background-image: none;
   border: 0px;
-  display: block;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  width: 25rem;
+  width: 28rem;
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
@@ -522,25 +535,32 @@ input[type='text' i] {
   padding: 1px 2px;
 }
 input {
-  writing-mode: horizontal-tb !important;
-  text-rendering: auto;
   color: (black, white);
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
   text-shadow: none;
   display: inline-block;
-  text-align: start;
   appearance: auto;
   -webkit-rtl-ordering: logical;
   cursor: text;
   background-color: (rgb(255, 255, 255), rgb(59, 59, 59));
   margin: 0em;
-  padding: 1px 2px;
-  border-width: 2px;
-  border-style: inset;
+  padding: 0.1rem 0.2rem;
+  border-width: 0.2rem; 
   border-color: (rgb(118, 118, 118), rgb(133, 133, 133));
-  border-image: initial;
+}
+#reset-password{
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+  -webkit-box-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-login{
+  position: relative;
+  background-color: #1ed760;
+  color: #000000;
+  border-radius: 500px;
+  font-size: inherit;
+  padding: 14px 32px;
 }
