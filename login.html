@@ -11,42 +11,56 @@
       rel="stylesheet"
     />
     <title>Login - Spotify</title>
-
   </head>
   <body>
     <!-- Logo -->
     <logo id="logo">
-        <div class="logo-preto">
-            <img src="./img/logo2.png" alt="" class="logo">
-        </div>
+      <div class="logo-preto">
+        <img src="img/logo2.png" alt="" class="logo" />
+      </div>
     </logo>
 
     <!-- Showcase -->
     <div id="showcase-login">
-        <div class="button-login">
-          <p>Para continuar, faça login no Spotify.</p>
-            <button class="btn-facebook">continuar com o facebook</button><br><br>
-            <button class="btn-apple">continuar com a apple</button><br><br>
-            <button class="btn-google">continuar com o google</button><br><br>
-            <button class="btn-telefone">continuar com um numero de telefone</button><br><br>
-            <h7>Endereço de e-mail ou nome de usuário</h7><br>
-            <input type="email" nome="email" id="email"><br>
-            <h7>Senha</h7><br>
-            <input type="password" nome="password" id="password"><br>
-            <h7>Esqueceu sua senha?</h7><br>
-            <input type="checkbox" nome="checkbox" id="checkbox">
-            <h7>Lembrar de mim</h7>
-            <button class="btn-login">entrar</button>
-        </div>
+      <div class="button-login">
+        <p>Para continuar, faça login no Spotify.</p>
+        <button class="btn-facebook style-facebook">
+          Continuar com o Facebook</button
+        ><br /><br />
+        <button class="btn-apple style-apple">Continuar com a Apple</button
+        ><br /><br />
+        <button class="btn-google">Continuar com o Google</button><br /><br />
+        <button class="btn-telefone">Continuar com um número de telefone</button
+        ><br /><br />
+        <h6>Endereço de e-mail ou nome de usuário</h6>
+        <input
+          class="login-username"
+          type="email"
+          nome="email"
+          id="email"
+          placeholder="Email address or username"
+        />
+        <h6>Senha</h6>
+        <input
+          class="login-username"
+          type="password"
+          nome="password"
+          id="password"
+          placeholder="Password"
+        /><br />
+        <h7>Esqueceu sua senha?</h7><br />
+        <input type="checkbox" nome="checkbox" id="checkbox" />
+        <h7>Lembrar de mim</h7>
+        <button class="btn-login">Entrar</button>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer id="footer-login">
       <div class="footer-login-container">
         <h3>Não tem uma conta?</h3>
-        <button class="btn-singup">inscrever-se no spotify</button>
+        <button class="btn-singup">Inscrever-se no Spotify</button>
       </div>
     </footer>
-    
   </body>
 </html>
