@@ -12,32 +12,67 @@
     <title>Spotify - Web Player</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="Navbar">
 
-    </div>
     <!-- Menu Lateral-->
-    <div class="menu-principal">
-        <div class="menu-principal">
-          <div class="logo">
-              <img src="/img/logo.png" alt="logo">
-          </div>
-          <div class="menu-itens">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Buscar</a></li>
-              <li><a href="#">Sua Biblioteca</a></li>
-              <li><a href="#">Criar Playlist</a></li>
-              <li><a href="#">Músicas Curtidas</a></li>
-              <li><a href="#">Top 50 - Mundo</a></li>
-              <li><a href="#">Pagode</a></li>
-              <li><a href="#">Funk</a></li>
-            </ul>
-          </div>
+    <menu id="sidebar">
+      <div class="sidebar-wraper"> <!-- scroll bar -->
+        <div class="sidebar-logo">
+          <img src="./img/logo.png" alt="">
+        </div>
+        <!-- Botoes iniciais-->
+        <div class="sidebar-menu">
+          <!-- <a class="sidebar-menu-selecionado" href="#"><i class="fas fa-home"> Inicio</i></a> -->
+          <a href="#"><i class="fas fa-home"> Inicio</i></a>
+          <a href="#"><i class="fas fa-search"> Buscar</i></a>
+          <a href="#"><i class="fas fa-database"> Biblioteca</i></a>
         </div>
 
-        <!-- Footer-->
+        <!-- Playlist-->
+        <div class="sidebar-menu">
+          <p class="sidebar-menu-title">  </p>
+
+          <div class="sidebar-menu-item">
+            <div class="sidebar-menu-componente">
+              +
+            </div>
+            <span>Criar Playlist</span>
+          </div>
+          
+          <div class="sidebar-menu-item">
+            <img src="./img/curtidas.png" alt="">
+            <span>Criar Curtidas</span>
+          </div>
+
+          <div class="sidebar-playlist">
+            <a href="">Top 50 - Mundo</a>
+            <a href="">Today's Top Hits</a>
+            <a href="">Funk</a>
+            <a href="">Pagode</a>
+            <a href="">Sertanejo</a>
+            <a href="">Pop</a>
+            <a href="">Igreja</a>
+            <a href="">Workout</a>
+            <a href="">Musica Latina</a>
+            <a href="">Internacionais</a>
+          </div>
+        </div> 
       </div>
+    </menu>
+
+    <!-- Main-->
+    <div id="main">
+      <div class="main-wraper"> <!-- scroll bar -->
+        <div class="main-row">
+          <div class="main-row-title"><h2>Paradas</h2></div>
+
+          <div class="main-col">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-->
 
     <!-- Scripts -->
     <script
