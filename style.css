@@ -703,12 +703,13 @@ input {
   text-align: center;
 }
 
-#main .main-wraper .main-row .main-row-title .main-col img{
-  width: 30px;
-  height: 30px;
+#main .main-wraper .main-row .main-col img{
+  width: 134px;
+  height: auto;
   vertical-align: middle;
   text-align: center;
   line-height: 30px;
   display: inline-block;
+  border-radius: 5px;
 }
 
