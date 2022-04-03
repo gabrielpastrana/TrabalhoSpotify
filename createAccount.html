@@ -65,10 +65,21 @@
             placeholder="Insira um nome de perfil"
           />
 
+          <!-- nascimento-->
           <p>Qual a sua data de nascimento?</p>
 
+          <!-- genero -->
           <p>Qual é o seu gênero?</p>
+          <form>
+            <input type="radio" id="masculino" name="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="nao-binario" name="nao-binario" value="nao-binario">
+            <label for="nao-binario">Não binário</label>
+          </form>
 
+          <!-- checkbox -->
           <input type="checkbox" nome="checkbox">
           <h7>Não quero receber mensagens de marketing do Spotify</h7> <br>
 
@@ -86,12 +97,11 @@
 
         <!-- Botao inscrever-se -->
         <div class="formulario-button-inscrever">
-          <button>
-            <h2>Inscrever-se</h2>
-          </button>
+          <button class="btn-inscrever">Inscrever-se</button>
         </div>
 
         <h4>Já tem uma conta? Faça login.</h4>
+
       </div>
     </div>
   </body>

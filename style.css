@@ -713,3 +713,15 @@ input {
   border-radius: 5px;
 }
 
+/*            Create Account            */
+#formulario{
+  height: 100%;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  margin: 0%;
+}
+
+#formulario .formulario-wraper .formulario-logo img{
+  height: 40px;
+  width: auto;
+  float: center;
+}
