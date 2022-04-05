@@ -2,8 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }
-
+html, body{height: 100%;}
 :root {
   --default-green: #1db954;
   --light-green: #1ed760;
@@ -40,6 +41,7 @@ body {
   width: auto;
 }
 
+/*            HOME            */
 /* menu */
 #menu {
   display: flex;
@@ -209,6 +211,9 @@ body {
   margin-left: 10px;
 }
 
+
+/*            ACCOUNT           */
+
 .page-content {
   padding-top: 8%;
   width: 100%;
@@ -355,6 +360,9 @@ table {
   border: rgb(182, 43, 190) 0%, rgb(150, 34, 185) 100%;
   border-style: ridge;
 }
+
+
+/*            LOGIN           */
 .logo-preto {
   border-bottom: 1px solid rgb(217, 218, 220);
 }
@@ -634,4 +642,175 @@ hr{
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
+}
+
+
+/*            PLAYER            */
+/* Botoes iniciais */
+#sidebar{
+  float: left;
+  width: 250px;
+  padding: 10px 10px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#sidebar .sidebar-wraper{
+  padding-bottom: 200px;
+}
+
+#sidebar .sidebar-menu{
+  margin: 20px 0;
+  color: rgb(190,190,190)
+}
+
+#sidebar .sidebar-logo img{
+  max-width: 250px;
+  width: 100%;
+}
+
+#sidebar .sidebar-menu a{
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+#sidebar .sidebar-menu svg{
+  margin: 0 20px;
+}
+
+#sidebar .sidebar-menu a:hover{
+  color: white;
+}
+
+/* #sidebar .sidebar-menu a.sidebar-menu-selecionado{
+  color: white;
+  background-color: rgb(80, 80, 80);
+  border-radius: 100px;
+} */
+
+/* Playlist */
+#sidebar .sidebar-menu .sidebar-menu-item{
+  margin-top: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#sidebar .sidebar-menu p.sidebar-menu-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#sidebar .sidebar-menu .sidebar-menu-item .sidebar-menu-componente{
+  width: 30px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+}
+
+#sidebar .sidebar-menu .sidebar-menu-item img{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+}
+
+#sidebar .sidebar-menu .sidebar-menu-item span{
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+#sidebar .sidebar-playlist{
+  padding: 20px 0;
+  border-top: 1px solid rgb(40, 40, 40);
+}
+
+#sidebar .sidebar-playlist{
+  margin: 10px 0;
+  display: block;
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+#sidebar .sidebar-playlist a:hover{
+  color: white;
+}
+#sidebar .sidebar-menu span:hover{
+  color: white;
+}
+
+/* MAIN */
+/* recomendações */
+#main{
+  width: calc(100% - 250px);
+  background-color: rgb(30, 30, 30);
+  height: 100%;
+  
+  float: left;
+  padding: 15px 50px;
+  overflow-y: auto;
+}
+
+#main .main-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#main .main-wraper{
+  padding-bottom: 200px;
+}
+
+#main .main-row-title{
+  width: 100%;
+}
+#main .main-row-title h2{
+  color: white;
+}
+
+#main  .main-col{
+  cursor: pointer;
+  width: 10%;
+  margin-right: 1%;
+  margin-top: 20px;
+  background-color: #282828;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+#main .main-wraper .main-row .main-col img{
+  width: 134px;
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/*            Create Account            */
+#formulario{
+  height: 100%;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  margin: 0%;
+}
+
+#formulario .formulario-wraper .formulario-logo img{
+  height: 40px;
+  width: auto;
+  float: center;
 }

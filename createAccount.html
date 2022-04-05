@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonte da letra-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inscrever-se - Spotify</title>
+  </head>
+  <body>
+    <div id="formulario">
+      <div class="formulario-wraper">
+        <!-- Logo -->
+        <div class="formulario-logo">
+          <img src="./img/logo2.png" alt="">  
+        </div>
+        <!-- Texto -->
+        <h1>Inscreva-se grátis e comece a curtir.</h1>
+        <!-- Botões -->
+        <div class="formularuio-button">
+          <button class="btn-facebook style-facebook">Inscrever-se com o Facebook</button> <br>
+          <button class="btn-google style-google">Inscrever-se com o Google</button>
+        </div>
+        <!-- Formulario -->
+        <div class="formulario-info">
+          <p>Qual é o seu e-mail?</p>
+          <input
+            class="formulario-email"
+            type="email"
+            nome="email"
+            id="email"
+            placeholder="Insira seu e-mail."
+          />
+          <p>Usar número de telefone</p>
+
+          <p>Confirme o seu e-mail</p>
+          <input
+            class="formulario-email-confirmacao"
+            type="email"
+            nome="email"
+            id="email"
+            placeholder="Insira o e-mail novamente"
+          />
+
+          <p>Crie uma senha</p>
+          <input
+            class="formulario-senha"
+            type="password"
+            nome="password"
+            id="password"
+            placeholder="Crie uma senha"
+          />
+
+          <p>Como devemos chamar você?</p>
+          <input
+            class="formulario-nome-perfil"
+            type="text"
+            nome="text"
+            id="email"
+            placeholder="Insira um nome de perfil"
+          />
+
+          <!-- nascimento-->
+          <p>Qual a sua data de nascimento?</p>
+
+          <!-- genero -->
+          <p>Qual é o seu gênero?</p>
+          <form>
+            <input type="radio" id="masculino" name="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="nao-binario" name="nao-binario" value="nao-binario">
+            <label for="nao-binario">Não binário</label>
+          </form>
+
+          <!-- checkbox -->
+          <input type="checkbox" nome="checkbox">
+          <h7>Não quero receber mensagens de marketing do Spotify</h7> <br>
+
+          <input type="checkbox" name="chechbox">
+          <h7>Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</h7> <br>
+        
+          <input type="checkbox" name="checkbox">
+          <h7>Eu concordo com os Termos e Condições de Uso do Spotify.</h7> <br>
+
+          <input type="checkbox" name="checkbox">
+          <h7>Não sou um robô.</h7> <br>
+
+          <p>Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a Política de Privacidade do Spotify.</p>
+        </div>
+
+        <!-- Botao inscrever-se -->
+        <div class="formulario-button-inscrever">
+          <button class="btn-inscrever">Inscrever-se</button>
+        </div>
+
+        <h4>Já tem uma conta? Faça login.</h4>
+
+      </div>
+    </div>
+  </body>
+</html>
