@@ -521,7 +521,6 @@ table {
 .btn-apple.btn-apple,
 .btn-google.btn-google,
 .btn-signup.btn-signup {
-  display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -542,7 +541,6 @@ table {
   line-height: 20px;
   font-weight: 700;
   border-radius: 500px;
-  display: inline-block;
   text-align: center;
   touch-action: manipulation;
   transition-duration: 33ms;
@@ -555,6 +553,7 @@ table {
   letter-spacing: 0.1rem;
   width: 28rem;
   text-transform: uppercase;
+  align-items: center;
 }
 button {
   appearance: auto;
@@ -566,9 +565,7 @@ button {
   text-transform: none;
   text-indent: 0px;
   text-shadow: none;
-  display: inline-block;
   text-align: center;
-  align-items: flex-start;
   cursor: pointer;
   box-sizing: border-box;
   background-color: (rgb(239, 239, 239), rgb(59, 59, 59));
@@ -579,22 +576,8 @@ button {
   border-color: (rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
 }
-.btn-facebook::after,
-.btn-apple::after,
-.btn-google::after,
-.btn-telefone::after {
-  display: block;
-  position: absolute;
-  pointer-events: none;
-  transition: border-color 200ms ease-in 0s;
-  box-sizing: border-box;
-  width: calc(100% + 12px);
-  height: calc(100% + 12px);
-  top: -6px;
-  left: -6px;
-  background: transparent;
-  border-radius: 500px;
-  border: 3px solid transparent;
+.style-facebook{
+  margin-top: 1rem;
 }
 .style-apple {
   color: rgb(248, 248, 248);
@@ -961,4 +944,68 @@ input:checked{
   height: 40px;
   width: auto;
   float: center;
+}
+.formulario-logo {
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.sign-up{
+  align-items: center;
+  text-align: center;
+  line-height: 36px;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 28px;
+  letter-spacing: -0.25px;
+  line-height: 36px;
+  color: inherit;
+  font-weight: 700;
+}
+.form-signup h6{
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  padding: 0.4rem 0.2rem 0.4rem 0;
+}
+.form-signup {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 900;
+  display: block;
+}
+
+.login-username:hover {
+  box-shadow: inset 0 0 0 1px #000000;
+}
+
+.login-username {
+  align-items: center;
+  appearance: none;
+  background-image: none;
+  border: 0px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  width: 28rem;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 4px;
+  padding: 14px;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 1px #878787;
+  color: #000000;
+  margin-bottom: 0.3rem;
 }
