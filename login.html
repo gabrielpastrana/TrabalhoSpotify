@@ -30,9 +30,13 @@
         <button class="btn-apple style-apple">Continuar com a Apple</button
         ><br /><br />
         <button class="btn-google">Continuar com o Google</button><br /><br />
-        <button class="btn-telefone">Continuar com um número de telefone</button
-        ><br /><br />
-        <h6>Endereço de e-mail ou nome de usuário</h6>
+        <button class="btn-telefone">
+          Continuar com um número de telefone
+        </button>
+      </div>
+      <br />
+      <div class="login">
+        <h6 class="email-address">Endereço de e-mail ou nome de usuário</h6>
         <input
           class="login-username"
           type="email"
@@ -40,7 +44,7 @@
           id="email"
           placeholder="Email address or username"
         />
-        <h6>Senha</h6>
+        <h6 class="password">Senha</h6>
         <input
           class="login-username"
           type="password"
@@ -48,18 +52,25 @@
           id="password"
           placeholder="Password"
         /><br />
-        <h7>Esqueceu sua senha?</h7><br />
-        <input type="checkbox" nome="checkbox" id="checkbox" />
-        <h7>Lembrar de mim</h7>
-        <button class="btn-login">Entrar</button>
+      </div>
+      <div class="forgot-password">
+        <a href="#" id="reset-password" data-testid="reset-password-link"
+          >Esqueceu sua senha?</a
+        ><br />
+        <div class="log-in">
+          <input type="checkbox" nome="checkbox" id="checkbox" />
+          <h6>Lembrar de mim</h6>
+          <button class="btn-login">Iniciar Sessão</button>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
+    <hr class="border" />
     <footer id="footer-login">
       <div class="footer-login-container">
         <h3>Não tem uma conta?</h3>
-        <button class="btn-singup">Inscrever-se no Spotify</button>
+        <button class="btn-signup">Inscrever-se no Spotify</button>
       </div>
     </footer>
   </body>
