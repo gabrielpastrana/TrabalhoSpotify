@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <!--Fonte da letra-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -35,6 +35,10 @@
         </button>
       </div>
       <br />
+      <p class="traces">
+        ------------------------------------------------------ ou
+        ------------------------------------------------------
+      </p>
       <div class="login">
         <h6 class="email-address">Endereço de e-mail ou nome de usuário</h6>
         <input
@@ -44,7 +48,7 @@
           id="email"
           placeholder="Email address or username"
         />
-        <h6 class="password">Senha</h6>
+        <h6 class="password-login">Senha</h6>
         <input
           class="login-username"
           type="password"
@@ -70,9 +74,13 @@
     <footer id="footer-login">
       <div class="footer-login-container">
         <h3>Não tem uma conta?</h3>
-        <form action="createAccount.html">
-          <button class="btn-signup">Inscrever-se no Spotify</button>
-        </form>
+        <button
+          onclick="window.location = '/createAccount.html'"
+          class="btn-signup"
+        >
+          Inscrever-se no Spotify
+        </button>
+
       </div>
     </footer>
   </body>

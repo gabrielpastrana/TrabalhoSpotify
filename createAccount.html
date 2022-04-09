@@ -1,108 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!--Fonte da letra-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>Inscrever-se - Spotify</title>
-  </head>
-  <body>
-    <div id="formulario">
-      <div class="formulario-wraper">
-        <!-- Logo -->
-        <div class="formulario-logo">
-          <img src="./img/logo2.png" alt="">  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!--Fonte da letra-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Inscrever-se - Spotify</title>
+</head>
+
+<body>
+  <div class="createAccount">
+  <div id="formulario">
+    <div class="formulario-wraper">
+      <!-- Logo -->
+      <div class="formulario-logo">
+        <img src="./img/logo2.png" alt="" />
+      </div>
+      <!-- Texto -->
+      <h1 class="sign-up">Inscreva-se grátis e comece a curtir.</h1>
+      <!-- Botões -->
+      <div id="showcase-login">
+        <div class="button-login">
+        <button class="btn-facebook style-facebook">
+          Inscrever-se com o Facebook</button><br /><br />
+        <button class="btn-google style-google">
+          Inscrever-se com o Google</button><br />
+        <br />
+        <p class="traces">
+          ------------------------------------------------------ ou
+          ------------------------------------------------------
+        </p>
+      <!-- Formulario -->
+      <div class="form-signup">
+        <div>
+        <h6 class="email-address sign-in">Qual é o seu e-mail?</h6>
+        <input class="login-username" type="email" nome="email" id="email" placeholder="Insira seu e-mail." />
         </div>
-        <!-- Texto -->
-        <h1>Inscreva-se grátis e comece a curtir.</h1>
-        <!-- Botões -->
-        <div class="formularuio-button">
-          <button class="btn-facebook style-facebook">Inscrever-se com o Facebook</button> <br>
-          <button class="btn-google style-google">Inscrever-se com o Google</button>
+        <h6 class="usePhone">Usar número de telefone</h6>
+        <div>
+        <h6 class="email-address sign-in">Confirme o seu e-mail</h6>
+        <input class="login-username" type="email" nome="email" id="email" placeholder="Insira o e-mail novamente" />
         </div>
-        <!-- Formulario -->
-        <div class="formulario-info">
-          <p>Qual é o seu e-mail?</p>
-          <input
-            class="formulario-email"
-            type="email"
-            nome="email"
-            id="email"
-            placeholder="Insira seu e-mail."
-          />
-          <p>Usar número de telefone</p>
-
-          <p>Confirme o seu e-mail</p>
-          <input
-            class="formulario-email-confirmacao"
-            type="email"
-            nome="email"
-            id="email"
-            placeholder="Insira o e-mail novamente"
-          />
-
-          <p>Crie uma senha</p>
-          <input
-            class="formulario-senha"
-            type="password"
-            nome="password"
-            id="password"
-            placeholder="Crie uma senha"
-          />
-
-          <p>Como devemos chamar você?</p>
-          <input
-            class="formulario-nome-perfil"
-            type="text"
-            nome="text"
-            id="email"
-            placeholder="Insira um nome de perfil"
-          />
-
-          <!-- nascimento-->
-          <p>Qual a sua data de nascimento?</p>
-
-          <!-- genero -->
-          <p>Qual é o seu gênero?</p>
-          <form>
-            <input type="radio" id="masculino" name="masculino" value="masculino">
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="feminino" name="feminino" value="feminino">
-            <label for="feminino">Feminino</label>
-            <input type="radio" id="nao-binario" name="nao-binario" value="nao-binario">
-            <label for="nao-binario">Não binário</label>
-          </form>
-
-          <!-- checkbox -->
-          <input type="checkbox" nome="checkbox">
-          <h7>Não quero receber mensagens de marketing do Spotify</h7> <br>
-
-          <input type="checkbox" name="chechbox">
-          <h7>Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</h7> <br>
-        
-          <input type="checkbox" name="checkbox">
-          <h7>Eu concordo com os Termos e Condições de Uso do Spotify.</h7> <br>
-
-          <input type="checkbox" name="checkbox">
-          <h7>Não sou um robô.</h7> <br>
-
-          <p>Para saber mais sobre como o Spotify coleta, utiliza, compartilha e protege seus dados pessoais, leia a Política de Privacidade do Spotify.</p>
+        <div>
+        <h6 class="password">Crie uma senha</h6>
+        <input class="login-username" type="password" nome="password" id="password" placeholder="Crie uma senha" />
         </div>
-
-        <!-- Botao inscrever-se -->
-        <div class="formulario-button-inscrever">
-          <button class="btn-inscrever">Inscrever-se</button>
+        <div>
+        <h6 class="username">Como devemos chamar você?</h6>
+        <input class="login-username" type="text" nome="username" id="username" placeholder="Insira um nome de perfil" />
+        <p class="appear">This appears on your profile.</p>
         </div>
+      </div>
+      <!-- nascimento-->
+      <form>
+      <h6 class="birth">Qual a sua data de nascimento?</h6>
+      </form>
+      <div class="day-of-birth">
+        <label for="day" class="label-day">Dia</label>
+        <div id="day-of-birth">
+          <input type="text" labelledby="day" aria-invalid="false" id="day" inputmode="numeric" maxlength="2" name="day" placeholder="DD" class="input-day">
 
-        <h4>Já tem uma conta? Faça login.</h4>
-
+        </div>
+      </div>
+      <div class="month-of-birth">
+        <div id="month-of-birth">
+         <label for="month" class="label-month">Mês</label>
+        </div>
+        <form class="styled-select">
+        <select type="text" labelledby="month" name="month" placeholder="MM" class="input-month">
+          <option value="" disabled selected hidden>MONTH</option>
+          <option value="01">Janeiro</option>
+          <option value="02">Fevereiro</option>
+          <option value="03">Março</option>
+          <option value="04">Abril</option>
+          <option value="05">Maio</option>
+          <option value="06">Junho</option>
+          <option value="07">Julho</option>
+          <option value="08">Agosto</option>
+          <option value="09">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+        <svg role="img" focusable="false" height="16" width="16" viewbox=" 0 0 24 24" aria-hidden="true" class="arrow"></svg>
+      </form>
+      </div>
+      <div class="year-of-birth">
+      <div id="year-of-birth">
+        <label for="year" class="label-year">Ano</label>
+      </div>
+      <input type="text" labelledby="month" aria-invalid="false" id="year" inputmode="numeric" maxlength="2" name="year" placeholder="YYYY" class="input-year">
+        </div>
       </div>
     </div>
+  </div>
+      <!-- genero -->
+      <form class="form-user-information">
+        <h6>Qual é o seu gênero?</h6>
+        <input class="form-information" type="radio" id="masculino" name="masculino" value="masculino" />
+        <label for="masculino">Masculino</label>
+        <input class="form-information" type="radio" id="feminino" name="feminino" value="feminino" />
+        <label for="feminino">Feminino</label>
+        <input class="form-information" type="radio" id="nao-binario" name="nao-binario" value="nao-binario" />
+        <label for="nao-binario">Não binário</label>
+      </form>
+
+      <!-- checkbox -->
+      <form class="final-information">
+      <input class="form-information" type="checkbox" nome="checkbox"> Não quero receber mensagens de marketing do Spotify.<br/><br>
+      <input class="form-information" type="checkbox" name="chechbox"> Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.<br /><br/>
+      <input class="form-information" type="checkbox"> 
+            Eu li e aceito os 
+            <a target="_blank" href="https://www.spotify.com/br/legal/end-user-agreement/">termos de uso do Spotify<a>.
+    </form>
+      <!--<input type="checkbox" name="checkbox" />
+      <h6>Não sou um robô.</h6> <br />-->
+      <p class="footer"> 
+      <span class="footer">
+        Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
+        protege seus dados pessoais, leia a <a target="_blank" href="https://www.spotify.com/br/legal/privacy-policy/" class="footer-privacy" >Política de Privacidade do
+        Spotify.<a>.
+        </span>
+      </p>
+    </div>
+
+    <!-- Botao inscrever-se -->
+    <footer id="footer-signup">
+      <div class="footer-signup-container">
+      <button class="btn-sign-up">Inscrever-se</button>
+      <h4>Já tem uma conta? Faça <a target="_blank" href="/login.html">login<a>.</h4>
+    </div>
+    </footer>
+    </div>
   </body>
+
 </html>
