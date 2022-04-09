@@ -512,7 +512,7 @@ table {
 .btn-google:hover,
 .btn-telefone:hover,
 .btn-login:hover,
-.btn-signup:hover {
+.btn-signup:hover, .btn-sign-up:hover {
   border-color: black;
   font-size: 0.9rem;
 }
@@ -591,9 +591,35 @@ button {
 }
 .email-address {
   margin-right: 10rem;
+  align-items: flex-start;
 }
-.password {
+
+
+.usePhone{
+  text-decoration: underline;
+  font-size: 14px;
+  padding-top: 8px;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  color: #117a37;
+  align-items: flex-start;
+  margin-right: 16.5rem;
+  cursor: pointer;
+}
+
+.sign-in{
+  align-items: flex-start;
+  margin-right: 18rem;
+
+}
+.password-login {
   margin-right: 24rem;
+}
+.password{
+  margin-right: 20.5rem;
+}
+.username{
+  margin-right: 14.5rem;
 }
 .login {
   margin-top: 0px;
@@ -604,12 +630,11 @@ button {
   display: block;
 }
 
-.login-username:hover {
+.login-username:hover, .input-day:hover, .input-month:hover, .input-year:hover {
   box-shadow: inset 0 0 0 1px #000000;
 }
 
 .login-username {
-  align-items: center;
   appearance: none;
   background-image: none;
   border: 0px;
@@ -628,11 +653,9 @@ button {
   margin-bottom: 0.3rem;
 }
 
-input[type='text' i] {
-  padding: 1px 2px;
-}
 input {
   color: (black, white);
+  writing-mode: horizontal-tb !important;
   text-shadow: none;
   display: inline-block;
   appearance: auto;
@@ -640,9 +663,10 @@ input {
   cursor: text;
   background-color: (rgb(255, 255, 255), rgb(59, 59, 59));
   margin: 0em;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   border-width: 0.2rem;
   border-color: (rgb(118, 118, 118), rgb(133, 133, 133));
+  
 }
 
 .btn-signup {
@@ -686,6 +710,7 @@ input:checked{
 #footer-login {
   align-items: center;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .log-in{
@@ -705,7 +730,7 @@ input:checked{
 
 }
 
-.btn-login {
+.btn-login, .btn-sign-up {
   background-color: #1ed760;
   color: #000000;
   border-radius: 500px;
@@ -725,18 +750,15 @@ input:checked{
   border: none;
   margin-left: 8rem;
 }
+
 .border{
-  margin-left: 30.5rem;
+  margin-left: 28rem;
   margin-top: 2rem;
-  margin-bottom: 1rem;
   border-top: 1px solid rgb(217, 218, 220);
   width: 32rem;
   height: 0rem;
   align-items: center;
   text-align: center;
-}
-.footer-login-container{
-  padding-top: 1rem ;
 }
 .btn-signup{
   margin-top: 1.5rem;
@@ -945,14 +967,9 @@ input:checked{
 .sign-up{
   align-items: center;
   text-align: center;
-  line-height: 36px;
-  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
   display: block;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-size: 28px;
   letter-spacing: -0.25px;
   line-height: 36px;
@@ -960,7 +977,6 @@ input:checked{
   font-weight: 700;
 }
 .form-signup h6{
-  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
   font-size: 0.875rem;
@@ -969,8 +985,7 @@ input:checked{
   padding: 0.4rem 0.2rem 0.4rem 0;
 }
 .form-signup {
-  margin-top: 0px;
-  margin-bottom: 0px;
+
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 900;
@@ -990,7 +1005,6 @@ input:checked{
   line-height: 1.5rem;
   font-weight: 400;
   width: 28rem;
-  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
   border-radius: 4px;
@@ -1010,68 +1024,200 @@ input:checked{
   line-height: 1.25rem;
   -webkit-box-align: center;
   align-items: center;
-  display: flex;
+  text-align: center;
   font-weight: 700;
-  width: 100%;
   padding-bottom: 8px;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
+  margin-right: 14rem;
 }
-#day-of-birth{
-  width: 2rem;
-  height: 1rem;
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
-  -webkit-tap-highlight-color: transparent;
-  padding-bottom: 24px;
-  display: inline-flex;
-}
-.day-of-birth{
-  box-sizing: border-box;
-  font-family: spotify-circular, Helvetica, Arial, sans-serif;
-  -webkit-tap-highlight-color: transparent;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  -webkit-box-align: center;
-  align-items: center;
-  display: flex;
-  font-weight: 700;
-  width: 100%;
-  padding-bottom: 8px;
-  font-weight: normal;
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
-  -webkit-tap-highlight-color: transparent;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  -webkit-box-align: center;
-  align-items: center;
-  display: flex;
-  font-weight: 700;
-  width: 100%;
-  padding-bottom: 8px;
-}
-#day input{
-  appearance: none;
-  background-image: none;
+
+.input-day, .input-month, .input-year{
   border: 0px;
   display: block;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  width: 3rem;
+  height: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 1rem;
   border-radius: 4px;
   padding: 14px;
-  background-color: var(--background-base,#ffffff);
-  box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
-  color: var(--text-base,#000000);
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 1px #878787;
+  text-align: start;
+  position: relative;
+
 }
-.month-of-birth{
-  width: 45%;
+.input-day, .input-month, .input-year{
+  position: relative;
+  box-sizing: content-box;
+  z-index: 2;
+}
+.input-year{
+  width: 4rem;
+}
+.label-day, .label-month,.label-year{
+  width: 100%;
+  top:0; bottom: 0; left: 0; right: 0;
+  transition: 0.5s;
+  color: #6a6a6a;
+  font-weight: 400;
+}
+.input-day:focus + .label-day, .input-month:focus + .label-month{
+  margin-top: 0px;
+  top: -50%;
+  z-index: 2;
+  transition: 0.2s;
+}
+.input-month{
+  width: 8rem;
+  height: 2rem;
+  cursor: pointer;
+  color: #6a6a6a;
+}
+.day-of-birth, .month-of-birth, .year-of-birth{
+  display: inline-block;
+  position:relative;
+}
+.input-day, .input-month, .input-year {
+  margin-right: 0.5rem;
+  padding-top: 1rem;
+  text-align: justify;
+}
+
+.appear{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-family:  Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #6a6a6a;
+  padding-right: 16rem;
+}
+.traces{
+  color: #6a6a6a;
+}
+#day, #month, #year{
+  display: inline-block;
+}
+
+select:invalid {
+  color: gray; 
+}
+.birthday-month{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6a6a6a;
+  width: 12rem;
+  height: 3rem;
+
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+  align-items: flex-start;
+  text-align: start;
+  color: #000000;
+}
+.arrow{
+  background-image:url("https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1649505930~hmac=87e722f0e15dec691c39d43151a3cab0") ;
+  color: #878787;
+  pointer-events: none;
+  position: absolute;
+  right: 14px;
+  stroke-width: 0.8pt;
+}
+
+.form-user-information h6{
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  padding: 0.4rem 0.2rem 0.8rem 0.2rem;
+  align-items: center;
+  text-align: center;
+  margin-right: 8rem;
+}
+.form-user-information{
+  font-family:Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-right: 11rem;
+}
+
+.final-information {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.4rem 0.2rem 0.8rem 0.2rem;
+  padding-left:18rem;
+  align-items: center;
+  text-align:justify;
+  margin-left: 12rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.footer{
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: inherit;
+  text-align: center;
+}
+.footer-privacy a:hover{
+  color: rgb(30, 215, 96);
+  cursor: pointer;
+}
+.footer-privacy{
+  color: rgb(29, 185, 84);
+  text-decoration: underline;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+}
+#footer-signup{
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer-signup-container{
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.btn-sign-up{
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.form-information:hover{
+  box-shadow: inset 0 0 0 1px #000000;
 }
