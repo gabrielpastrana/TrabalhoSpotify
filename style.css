@@ -790,7 +790,7 @@ input:checked{
 
 
 /*            PLAYER            */
-/* Botoes iniciais */
+/* Menu lateral - Botoes iniciais */
 #sidebar{
   float: left;
   width: 250px;
@@ -799,6 +799,7 @@ input:checked{
   overflow-y: auto;
   background-color: black;
   overflow-x: hidden;
+  overflow-y: hidden, scroll;
 }
 
 #sidebar .sidebar-wraper{
@@ -836,7 +837,7 @@ input:checked{
   border-radius: 100px;
 } */
 
-/* Playlist */
+/* Menu lateral - Playlist */
 #sidebar .sidebar-menu .sidebar-menu-item{
   margin-top: 12px;
   cursor: pointer;
@@ -851,7 +852,7 @@ input:checked{
 
 #sidebar .sidebar-menu .sidebar-menu-item .sidebar-menu-componente{
   width: 30px;
-  height: 100%;
+  height: calc(100% - 100px);
   text-align: center;
   line-height: 30px;
   display: inline-block;
@@ -898,15 +899,21 @@ input:checked{
 /* recomendações */
 #main{
   width: calc(100% - 250px);
+  height: calc(100% - 100);
   background-color: rgb(30, 30, 30);
   height: 100%;
-  
   float: left;
   padding: 15px 50px;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  
 }
 
-#main .main-row{
+#main .main-wraper{
+  padding-bottom: 200px;
+}
+
+#main .main-wraper .main-row{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -914,30 +921,33 @@ input:checked{
   margin-bottom: 40px;
 }
 
-#main .main-wraper{
-  padding-bottom: 200px;
-}
-
 #main .main-row-title{
   width: 100%;
 }
+
 #main .main-row-title h2{
   color: white;
 }
 
 #main  .main-col{
   cursor: pointer;
-  width: 10%;
+  width: 15%;
   margin-right: 1%;
   margin-top: 20px;
   background-color: #282828;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
+  height: 300px;
+}
+
+#main .main-wraper .main-row .main-col:hover{
+  background-color: rgba(255,255,255,.3);
+  cursor: pointer;
 }
 
 #main .main-wraper .main-row .main-col img{
-  width: 134px;
+  width: 175px;
   height: auto;
   vertical-align: middle;
   text-align: center;
@@ -945,6 +955,20 @@ input:checked{
   display: inline-block;
   border-radius: 5px;
 }
+
+#main .main-wraper .main-row .main-col h3{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#player{
+  width: 100%;
+  height: 100px;
+  float: left;
+  background-color: #282828;
+  position: fixed; bottom: 0%;
+}
+
 
 /*            Create Account            */
 #formulario{
