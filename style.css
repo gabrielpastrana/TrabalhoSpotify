@@ -793,7 +793,7 @@ input:checked{
 /* Menu lateral - Botoes iniciais */
 #sidebar{
   float: left;
-  width: 250px;
+  width: 15.5rem;
   padding: 10px 10px;
   height: 100%;
   overflow-y: auto;
@@ -812,8 +812,10 @@ input:checked{
 }
 
 #sidebar .sidebar-logo img{
-  max-width: 250px;
+  height: 40px;
+  max-width: 131px;
   width: 100%;
+  margin: 1rem;
 }
 
 #sidebar .sidebar-menu a{
@@ -821,10 +823,14 @@ input:checked{
   text-decoration: none;
   display: block;
   padding: 10px 0;
+  margin: 0.5rem;
+  width: 8rem;
+  height: 2rem;
 }
 
-#sidebar .sidebar-menu svg{
-  margin: 0 20px;
+#sidebar .sidebar-menu span{
+  margin: 0 1rem;
+
 }
 
 #sidebar .sidebar-menu a:hover{
@@ -839,10 +845,20 @@ input:checked{
 
 /* Menu lateral - Playlist */
 #sidebar .sidebar-menu .sidebar-menu-item{
-  margin-top: 12px;
+  margin-top: 1.2rem;
   cursor: pointer;
   vertical-align: middle;
 }
+
+.sidebar-menu-item span{ 
+  font-family: Helvetica,Arial,sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: inherit;
+}
+
 
 #sidebar .sidebar-menu p.sidebar-menu-title {
   color: white;
@@ -878,11 +894,11 @@ input:checked{
 
 #sidebar .sidebar-playlist{
   padding: 20px 0;
-  border-top: 1px solid rgb(40, 40, 40);
+  border-top: 1px solid rgb(51, 50, 50);
 }
 
 #sidebar .sidebar-playlist{
-  margin: 10px 0;
+  margin: 2rem 0;
   display: block;
   color: rgb(190, 190, 190);
   text-decoration: none;
@@ -931,7 +947,7 @@ input:checked{
 
 #main .main-col{
   cursor: pointer;
-  width: 15%;
+  width: 12rem;
   margin-right: 1%;
   margin-top: 20px;
   background-color: #282828;
@@ -939,10 +955,37 @@ input:checked{
   padding: 10px;
   text-align: center;
   height: 300px;
+  z-index: 0;
+  align-items: flex-start;
+  text-align: start;
+}
+#main .music-title{
+  color: white;
+  box-sizing: border-box;
+  font-family: Helvetica,Arial,sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  padding-block-end: 4px;
 }
 
+#main .music-subtitle{
+  box-sizing: border-box;
+  font-family: Helvetica,Arial,sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color:#8b8080;
+  display: inline;
+  flex-basis: 100%;
+  height: 0;
+  width: 0;
+  flex-grow: 3;
+}
 #main .main-wraper .main-row .main-col:hover{
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(94, 93, 93, 0.61);
   cursor: pointer;
 }
 
@@ -963,13 +1006,14 @@ input:checked{
 
 #player{
   width: 100%;
-  padding: 20px;
-  height: 130px;
+  padding: 1rem;
+  height: 7rem;
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
-  background-color: rgb(60, 60, 60);
+  background-color: rgb(27, 27, 27);
+  border-top: 1px solid rgb(66, 65, 65);
 }
 
 #player .player-artist{
@@ -977,7 +1021,7 @@ input:checked{
 }
 
 #player .player-artist img{
-  max-width: 80px;
+  max-width: 4rem;
   display: inline-block;
   vertical-align: middle;
 }
@@ -986,25 +1030,25 @@ input:checked{
   display: inline-block;
   color: white;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.2rem;
   vertical-align: text-top;
-  margin-left: 10px;
-  margin-bottom: 5px;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #player .player-artist h4{
   display: inline-block;
   color: white;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 0.7rem;
   vertical-align: bottom;
-  margin-left: -78px;
+  margin-left: -5rem;
   position: left;
 }
 
 #player .player-artist h3>span{
   color: rgb(200, 200, 200);
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 #player .player-controll{
@@ -1014,17 +1058,17 @@ input:checked{
 
 #player .player-controll .player-controll-buttons a{
   color: white;
-  margin: 8px 15px;
-  font-size: 10px;
+  margin: 0.8rem 1.2rem;
+  font-size: 1.5rem;
 }
 
 #player .player-controll-progress{
   width: 100%;
-  max-width: 600px;
+  max-width: 60rem;
   height: 7px;
-  margin-top: 20px;
+  margin-top: 1.5rem;
   position: relative;
-  border-radius: 8px;
+  border-radius: 0.8px;
   display: inline-block;
   background: rgb(130, 130, 130);
 }
