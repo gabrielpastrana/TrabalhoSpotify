@@ -78,21 +78,24 @@
       </div>
     </nav>
     <div id="main">
-        <div class="arrow">
-          <div class="arrow-left" onclick="window.location = '/player.html'" type="button">
-          <a
-          class="fas fa-arrow-left fa-2x" 
-        >
-        </a>
-      </div>
-      <div class="arrow-right" onclick="window.location = '/player.html'" type="button">
-        <a
-        class="fas fa-arrow-right fa-2x" 
+      <header class="likedSongs-header">
+        <button class="fas fa-arrow-left fa-2x arrow-left"
+         onclick="window.location = '/player.html'" type="button" aria-label="Go back" aria-expanded="false"
       >
-      </a>
-    </div>
+      </button>
+      <button class="fas fa-arrow-right fa-2x arrow-right" onclick="window.location = '/youtube.html'" type="button" aria-label="Go forward">
+      </button>
+      <div class="liked-songs">
+        <div>
+          <img src="/img/curtidas.png" alt="musicas curtidas">
         </div>
-        <!-- Video -->
+        <h5>PLAYLIST</h5>
+        <h1>Músicas Curtidas</h1>
+        <h5>Keren Moreno - 459 músicas</h5>
+      </div>
+    </header>
+
+        <!-- Video 
       <iframe class="youtube-video" src="https://www.youtube.com/embed/6MNxuMgg58k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div>
       <a
@@ -102,7 +105,7 @@
       </a>
       <div class="hide">Adicionar para músicas curtidas.</div>
     </div>
-  </div>
+  </div>-->
   </div>
         <!-- Scripts -->
         <script
