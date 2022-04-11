@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonte da letra-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify - Web Player</title>
+  </head>
+  <body>
+    <!-- Menu Lateral-->
+    <nav id="sidebar">
+      <div class="sidebar-wraper">
+        <!-- scroll bar -->
+        <div class="sidebar-logo">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <!-- Botoes iniciais-->
+        <ul class="sidebar-menu">
+          <!-- <a class="sidebar-menu-selecionado" href="#"><i class="fas fa-home"> Inicio</i></a> -->
+          <li>
+            <a href="#" class="fas fa-home">
+              <span>Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fas fa-search">
+              <span>Buscar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fas fa-database">
+              <span>Biblioteca</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Playlist-->
+        <div class="sidebar-menu">
+          <p class="sidebar-menu-title"></p>
+
+          <div class="sidebar-menu-item">
+            <div class="sidebar-menu-componente">+</div>
+            <span>Criar Playlist</span>
+          </div>
+
+          <div class="sidebar-menu-item">
+            <img src="./img/curtidas.png" alt="" />
+            <span>Músicas Curtidas</span>
+          </div>
+
+          <div class="sidebar-playlist">
+            <a href="">Top 50 - Mundo</a>
+            <a href="">Today's Top Hits</a>
+            <a href="">Hits do Tik Tok</a>
+            <a href="">Funk</a>
+            <a href="">Pagode</a>
+            <a href="">Sertanejo</a>
+            <a href="">Pop</a>
+            <a href="">Igreja</a>
+            <a href="">Workout</a>
+            <a href="">Musica Latina</a>
+            <a href="">Internacionais</a>
+          </div>
+          <div class="install-app">
+            <a
+              class="fas fa-download"
+              draggable="false"
+              href="https://open.spotify.com/download"
+            >
+              <span>Install App</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="main">
+      <div class="main-wraper">
+        <div class="arrow">
+          <div class="arrow-left" onclick="window.location = '/player.html'" type="button">
+          <a
+          class="fas fa-arrow-left fa-2x" 
+        >
+        </a>
+      </div>
+      <div class="arrow-right" onclick="window.location = '/player.html'" type="button">
+        <a
+        class="fas fa-arrow-right fa-2x" 
+      >
+      </a>
+    </div>
+        <!-- Video -->
+    <div class="video">
+    <video class="video-music" autoplay>
+      <source src="/img/MATUÊ - SEM DÓ feat. L7NNON.mp4" type="video/mp4">Your browser does not support the video tag.
+    </video>
+    <div class="icon heart">
+      <a
+        class="fas fa-heart fa-lg"
+        draggable="false"
+        alt="Adicionar para músicas curtidas"
+        type="button"
+      ></a>
+    </div>
+    <div class="icon">
+      ...
+    </div>
+    
+  </div>
+  </div>
+</div>
+<div id="player">
+  <div class="player-artist">
+    <img src="./img/recentemente/do.jpg" alt="" />
+    <h3>Sem Dó</h3>
+    <h4>Matuê, L7NNON</h4>
+  </div>
+
+  <div class="player-controll">
+    <div class="player-controll-buttons">
+      <a href=""><i class="fas fa-backward"></i></a>
+      <a style="display: none" id="pauseBtn" href="#"
+        ><i class="far fa-pause-circle"></i
+      ></a>
+      <a id="playBtn" href="#"
+        ><i class="far fa-play-circle" aria-hidden="true"></i
+      ></a>
+      <a href=""><i class="fas fa-forward"></i></a>
+    </div>
+
+    <div class="player-controll-progress">
+      <div style="width: 90%" class="player-controll-progress-2"></div>
+    </div>
+  </div>
+</div>
+
+        <!-- Scripts -->
+        <script
+          src="https://kit.fontawesome.com/f9e19193d6.js"
+          crossorigin="anonymous"
+        ></script>
+      </body>
+    </html>
+    
+  </body>
+</html>

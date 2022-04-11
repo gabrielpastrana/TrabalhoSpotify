@@ -313,7 +313,7 @@ text-decoration: none;
   text-transform: none;
 }
 .account-settings {
-  width: 65rem;
+  width: 150vh;
   height: 80rem;
   background-color: #fff;
   box-sizing: border-box;
@@ -803,7 +803,7 @@ input:checked{
 }
 
 #sidebar .sidebar-wraper{
-  padding-bottom: 200px;
+  padding-bottom: 6rem;
 }
 
 #sidebar .sidebar-menu{
@@ -1363,4 +1363,54 @@ option {
 }
 .form-information:hover{
   box-shadow: inset 0 0 0 1px #000000;
+}
+/*Video*/
+.video{
+  margin-left: -5rem;
+}
+.video-music{
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 60rem;
+  height: 40rem;
+  text-align: center;
+}
+ .arrow{
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+  margin-right: 59rem;
+  cursor:pointer;
+  
+}
+.arrow-left {
+  display: inline;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+.youtube-video{
+  display: flex;
+  width: 55rem;
+  height: 40rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+.icon{
+  font-size: 2rem;
+  display: inline;
+  margin-left: 1rem;
+  color: whitesmoke;
+}
+.icon-youtube{
+  margin: 3rem;
+}
+.heart{
+  color: #117a37;
 }
