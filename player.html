@@ -259,13 +259,15 @@
         <h4>Matuê, WIU, Teto</h4>
       </div>
 
+      <audio id="audio" src="./musica/X2Download.com - Matuê, Teto & WIU - VAMPiro 🧛🏽_♀️ (128 kbps).mp3"></audio>
+
       <div class="player-controll">
         <div class="player-controll-buttons">
           <a href=""><i class="fas fa-backward"></i></a>
-          <a style="display: none" id="pauseBtn" href="#"
+          <a onclick="document.getElementById('audio').pause()" style="display: none" id="pauseBtn" href="#"
             ><i class="far fa-pause-circle"></i
           ></a>
-          <a id="playBtn" href="#"
+          <a onclick="document.getElementById('audio').play()" id="playBtn" href="#"
             ><i class="far fa-play-circle" aria-hidden="true"></i
           ></a>
           <a href=""><i class="fas fa-forward"></i></a>
