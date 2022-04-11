@@ -915,7 +915,6 @@ input:checked{
 /* recomendações */
 #main{
   width: calc(100% - 250px);
-  height: calc(100% - 100);
   background-color: rgb(30, 30, 30);
   height: 100%;
   float: left;
@@ -1371,46 +1370,60 @@ option {
 .video-music{
   display: inline-flex;
   align-items: center;
-  margin-top: 2rem;
   width: 60rem;
-  height: 40rem;
+  height: 35rem;
   text-align: center;
+  margin-left: 8rem;
+  margin-top: 0.5rem;
 }
- .arrow{
-  color: rgb(190, 190, 190);
-  text-decoration: none;
+ #main .video-header{
   display: flex;
-  padding: 10px 0;
-  margin-bottom: 0.5rem;
   width: 8rem;
   height: 2rem;
-  margin-right: 59rem;
+  margin-right: 50rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
   cursor:pointer;
-  
 }
-.arrow-left {
+.arrow-left, .arrow-right {
   display: inline;
   margin-right: 2rem;
   text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(190, 190, 190);
 }
+
+.arrow-left:hover, .arrow-right:hover {
+  color: #1db954;
+}
+
 .youtube-video{
-  display: flex;
+  display: inline-block;
   width: 55rem;
-  height: 40rem;
+  height: 30rem;
   align-items: center;
   text-align: center;
-  margin-top: 5rem;
-  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
 }
-.icon{
+.icon, .icon-comments{
   font-size: 2rem;
   display: inline;
-  margin-left: 1rem;
+  align-items: flex-start;
+  text-align: start;
   color: whitesmoke;
+  margin-left: 2rem;
+  cursor: pointer;
+
 }
 .icon-youtube{
   margin: 3rem;
 }
-.heart{
-  color: #117a37;
+.icon{
+  color: #1db954;
+}
+
+.video-header{
+  background-color: transparent;
 }

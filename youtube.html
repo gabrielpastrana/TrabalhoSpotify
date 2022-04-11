@@ -78,32 +78,26 @@
       </div>
     </nav>
     <div id="main">
-        <div class="arrow">
-          <div class="arrow-left" onclick="window.location = '/player.html'" type="button">
-          <a
-          class="fas fa-arrow-left fa-2x" 
-        >
-        </a>
-      </div>
-      <div class="arrow-right" onclick="window.location = '/player.html'" type="button">
-        <a
-        class="fas fa-arrow-right fa-2x" 
+      <header class="video-header">
+        <button class="fas fa-arrow-left fa-2x arrow-left"
+         onclick="window.location = '/player.html'" type="button" aria-label="Go back" aria-expanded="false"
       >
-      </a>
-    </div>
-        </div>
+        </button>
+        <button class="fas fa-arrow-right fa-2x arrow-right" onclick="window.location = '/video.html'" type="button" aria-label="Go forward">
+        </button>
+      </header>
         <!-- Video -->
       <iframe class="youtube-video" src="https://www.youtube.com/embed/6MNxuMgg58k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="icon-youtube">
-      <div class="icon heart">
-        <a
-          class="fas fa-heart fa-lg"
-          draggable="false"
-          alt="Adicionar para músicas curtidas"
-          type="button"
-        ></a>
-      </div>
-      <div class="icon">
+        <div class="icon">
+          <a
+            class="fas fa-heart fa-lg"
+            draggable="false"
+            alt="Adicionar para músicas curtidas"
+            type="button"
+          ></a>
+        </div>
+      <div class="icon-comments">
         ...
       </div>
     </div>  

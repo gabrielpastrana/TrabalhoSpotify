@@ -78,64 +78,44 @@
       </div>
     </nav>
     <div id="main">
-      <div class="main-wraper">
-        <div class="arrow">
-          <div class="arrow-left" onclick="window.location = '/player.html'" type="button">
-          <a
-          class="fas fa-arrow-left fa-2x" 
+      <header class="video-header">
+          <button class="fas fa-arrow-left fa-2x arrow-left"
+           onclick="window.location = '/player.html'" type="button" aria-label="Go back" aria-expanded="false"
         >
-        </a>
-      </div>
-      <div class="arrow-right" onclick="window.location = '/player.html'" type="button">
-        <a
-        class="fas fa-arrow-right fa-2x" 
-      >
-      </a>
-    </div>
+        </button>
+        <button class="fas fa-arrow-right fa-2x arrow-right" onclick="window.location = '/youtube.html'" type="button" aria-label="Go forward">
+        </button>
+      </header>
         <!-- Video -->
     <div class="video">
-    <video class="video-music" autoplay>
+    <video class="video-music" autoplay controls>
       <source src="/img/MATUÊ - SEM DÓ feat. L7NNON.mp4" type="video/mp4">Your browser does not support the video tag.
     </video>
-    <div class="icon heart">
-      <a
-        class="fas fa-heart fa-lg"
-        draggable="false"
-        alt="Adicionar para músicas curtidas"
-        type="button"
-      ></a>
-    </div>
-    <div class="icon">
-      ...
-    </div>
-    
-  </div>
-  </div>
-</div>
-<div id="player">
-  <div class="player-artist">
-    <img src="./img/recentemente/do.jpg" alt="" />
-    <h3>Sem Dó</h3>
-    <h4>Matuê, L7NNON</h4>
-  </div>
 
-  <div class="player-controll">
-    <div class="player-controll-buttons">
-      <a href=""><i class="fas fa-backward"></i></a>
-      <a style="display: none" id="pauseBtn" href="#"
-        ><i class="far fa-pause-circle"></i
-      ></a>
-      <a id="playBtn" href="#"
-        ><i class="far fa-play-circle" aria-hidden="true"></i
-      ></a>
-      <a href=""><i class="fas fa-forward"></i></a>
-    </div>
+    <div id="player">
+      <div class="player-artist">
+        <img src="./img/recentemente/do.jpg" alt="" />
+        <h3>Sem Dó</h3>
+        <h4>Matuê, L7NNON</h4>
+      </div>
 
-    <div class="player-controll-progress">
-      <div style="width: 90%" class="player-controll-progress-2"></div>
+    <div class="player-controll">
+      <div class="player-controll-buttons">
+        <a href=""><i class="fas fa-backward"></i></a>
+        <a style="display: none" id="pauseBtn" href="#"
+          ><i class="far fa-pause-circle"></i
+        ></a>
+        <a id="playBtn" href="#"
+          ><i class="far fa-play-circle" aria-hidden="true"></i
+        ></a>
+        <a href=""><i class="fas fa-forward"></i></a>
+      </div>
+
+      <div class="player-controll-progress">
+        <div style="width: 90%" class="player-controll-progress-2"></div>
+      </div>
     </div>
   </div>
-</div>
 
         <!-- Scripts -->
         <script
