@@ -94,15 +94,44 @@
         </div>
         <!-- Video -->
       <iframe class="youtube-video" src="https://www.youtube.com/embed/6MNxuMgg58k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div>
-      <a
-        class="fas fa-heart"
-        draggable="false"
-      >
-      </a>
-      <div class="hide">Adicionar para músicas curtidas.</div>
-    </div>
+      <div class="icon-youtube">
+      <div class="icon heart">
+        <a
+          class="fas fa-heart fa-lg"
+          draggable="false"
+          alt="Adicionar para músicas curtidas"
+          type="button"
+        ></a>
+      </div>
+      <div class="icon">
+        ...
+      </div>
+    </div>  
   </div>
+  </div>
+  <div id="player">
+    <div class="player-artist">
+      <img src="./img/recentemente/pandora.jpg" alt="" />
+      <h3>Pandora</h3>
+      <h4>DG MATT-D, Vulgo FK</h4>
+    </div>
+  
+    <div class="player-controll">
+      <div class="player-controll-buttons">
+        <a href=""><i class="fas fa-backward"></i></a>
+        <a style="display: none" id="pauseBtn" href="#"
+          ><i class="far fa-pause-circle"></i
+        ></a>
+        <a id="playBtn" href="#"
+          ><i class="far fa-play-circle" aria-hidden="true"></i
+        ></a>
+        <a href=""><i class="fas fa-forward"></i></a>
+      </div>
+  
+      <div class="player-controll-progress">
+        <div style="width: 90%" class="player-controll-progress-2"></div>
+      </div>
+    </div>
   </div>
         <!-- Scripts -->
         <script
