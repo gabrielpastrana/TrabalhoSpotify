@@ -1464,7 +1464,7 @@ option {
   position: fixed;
   top: 0;
   width: 100%;
-
+  margin-bottom: 2rem;
 }
 
 #player-menu .player-menu-container {
@@ -1473,22 +1473,20 @@ option {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  margin-left: 20rem;
+  margin-left: 75rem;
 }
 
-#player-menu .player-menu-container ul {
+#player-menu .player-menu-container li {
+  padding: 0 20px;
+  transition: all 300ms ease;
   display: flex;
   list-style: none;
   font-weight: bold;
   float: right;
+  margin-top: 1rem;
 }
 
-#player-menu .player-menu-container ul li {
-  padding: 0 20px;
-  transition: all 300ms ease;
-}
-
-#player-menu .player-menu-container ul li:hover {
+#player-menu .player-menu-container li:hover {
   color: #1db954;
   cursor: pointer;
 }
@@ -1500,7 +1498,6 @@ option {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  margin-left: 45rem;
 }
 .propaganda{
   align-items: center;
