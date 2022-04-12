@@ -1454,3 +1454,62 @@ option {
   font-weight: 400;
   right: 0;
 }
+#playBtn:hover{
+  color: #117a37;
+}
+#player-menu {
+  display: flex;
+  color: white;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+#player-menu .player-menu-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-left: 20rem;
+}
+
+#player-menu .player-menu-container ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  float: right;
+}
+
+#player-menu .player-menu-container ul li {
+  padding: 0 20px;
+  transition: all 300ms ease;
+}
+
+#player-menu .player-menu-container ul li:hover {
+  color: #1db954;
+  cursor: pointer;
+}
+
+#player-menu .player-menu-container ul li:nth-child(3) {
+  border-right: 1px solid white;
+}
+#player-menu .profile-photo-player img{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-left: 45rem;
+}
+.propaganda{
+  align-items: center;
+  text-align: center;
+  margin-left: 5rem;
+}
+.lyrics{
+  width: 50rem;
+  height: 45rem;
+  margin-top: 2rem;
+  margin-left: 8rem;
+}

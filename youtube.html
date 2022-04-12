@@ -87,7 +87,7 @@
         </button>
       </header>
         <!-- Video -->
-      <iframe class="youtube-video" src="https://www.youtube.com/embed/6MNxuMgg58k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="youtube" class="youtube-video" src="https://www.youtube.com/embed/6MNxuMgg58k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="icon-youtube">
         <div class="icon">
           <a
@@ -97,7 +97,7 @@
             type="button"
           ></a>
         </div>
-      <div class="icon-comments">
+      <div class="icon-comments" onclick="window.location = '/lyrics.html'" type="button" >
         ...
       </div>
     </div>  
@@ -112,16 +112,34 @@
   
     <div class="player-controll">
       <div class="player-controll-buttons">
-        <a href=""><i class="fas fa-backward"></i></a>
-        <a style="display: none" id="pauseBtn" href="#"
-          ><i class="far fa-pause-circle"></i
+        <a href=""><i class="fas fa-backward" id="playBtn"></i></a>
+        <a
+          onclick="document.getElementById('audio').pause()"
+          style="display: none"
+          id="pauseBtn"
+          href="#"
+          ><i class="far fa-pause-circle" id="playBtn"></i
         ></a>
         <a id="playBtn" href="#"
-          ><i class="far fa-play-circle" aria-hidden="true"></i
+          ><i
+            class="far fa-play-circle"
+            id="playBtn"
+            onclick="document.getElementById('audio').play()"
+            href="#"
+            aria-hidden="true"
+          ></i
         ></a>
-        <a href=""><i class="fas fa-forward"></i></a>
+        <a id="playBtn" href="#"
+          ><i
+            class="far fa-pause-circle"
+            id="playBtn"
+            onclick="document.getElementById('audio').pause()"
+            href="#"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a href=""><i class="fas fa-forward" id="playBtn"></i></a>
       </div>
-  
       <div class="player-controll-progress">
         <div style="width: 90%" class="player-controll-progress-2"></div>
       </div>

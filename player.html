@@ -78,6 +78,22 @@
         </div>
       </div>
     </menu>
+    <menu id="player-menu">
+      <div
+        class="player-menu-container"
+        onclick="window.location = '/account.html'"
+        type="button"
+      >
+        <!--Logo-->
+        <!--Menu-->
+        <div class="profile-photo-player">
+          <img src="img/profilePhoto.png" alt="profile-photo" />
+        </div>
+        <ul class="menu-items">
+          <li class="menu-item">Perfil</li>
+        </ul>
+      </div>
+    </menu>
     <!-- Main-->
     <div id="main">
       <div class="main-wraper">
@@ -255,7 +271,13 @@
             <p class="music-subtitle">Slowed + Reverbed</p>
           </div>
         </div>
-        <!-- Relax -->
+
+        <!-- Propaganda -->
+        <img
+          src="/img/propagandaSpotify.jpg"
+          class="propaganda"
+          alt="Propaganda"
+        />
       </div>
     </div>
 
@@ -267,18 +289,40 @@
         <h4>Matuê, WIU, Teto</h4>
       </div>
 
-      <audio id="audio" src="./musica/X2Download.com - Matuê, Teto & WIU - VAMPiro 🧛🏽_♀️ (128 kbps).mp3"></audio>
+      <audio
+        id="audio"
+        src="./musica/X2Download.com - Matuê, Teto & WIU - VAMPiro 🧛🏽_♀️ (128 kbps).mp3"
+      ></audio>
 
       <div class="player-controll">
         <div class="player-controll-buttons">
-          <a href=""><i class="fas fa-backward"></i></a>
-          <a onclick="document.getElementById('audio').pause()" style="display: none" id="pauseBtn" href="#"
-            ><i class="far fa-pause-circle"></i
+          <a href=""><i class="fas fa-backward" id="playBtn"></i></a>
+          <a
+            onclick="document.getElementById('audio').pause()"
+            style="display: none"
+            id="pauseBtn"
+            href="#"
+            ><i class="far fa-pause-circle" id="playBtn"></i
           ></a>
-          <a onclick="document.getElementById('audio').play()" id="playBtn" href="#"
-            ><i class="far fa-play-circle" aria-hidden="true"></i
+          <a id="playBtn" href="#"
+            ><i
+              class="far fa-play-circle"
+              id="playBtn"
+              onclick="document.getElementById('audio').play()"
+              href="#"
+              aria-hidden="true"
+            ></i
           ></a>
-          <a href=""><i class="fas fa-forward"></i></a>
+          <a id="playBtn" href="#"
+            ><i
+              class="far fa-pause-circle"
+              id="playBtn"
+              onclick="document.getElementById('audio').pause()"
+              href="#"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href=""><i class="fas fa-forward" id="playBtn"></i></a>
         </div>
 
         <div class="player-controll-progress">
